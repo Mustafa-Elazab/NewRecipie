@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable-v24/backgrounds_with_custom_corners.xml" value="0.2005" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable-v24/rectangle_shape.xml" value="0.203" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable/active_dot.xml" value="0.1875" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable/category_background.xml" value="0.1875" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable/ic_back.xml" value="0.2035" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable/ic_favorite_fill.xml" value="0.2035" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable/ic_heart.xml" value="0.188" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable/inactive_dot.xml" value="0.1875" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable/ovil_round.xml" value="0.186" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable/random_background.xml" value="0.188" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable/text_shadow.xml" value="0.203" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable/view_pager_background.xml" value="0.1875" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/drawable/view_pager_vackground.xml" value="0.186" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/activity_main.xml" value="0.190625" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/categories_shimmer_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/category_item_layout.xml" value="0.253125" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/favourite_item_layout.xml" value="0.20863616930312098" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/fragment_category_items.xml" value="0.20863616930312098" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/fragment_favourite.xml" value="0.25416666666666665" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/fragment_home.xml" value="0.20863616930312098" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/fragment_meal_detail.xml" value="0.20863616930312098" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/fragment_on_boarding.xml" value="0.24010416666666667" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/fragment_search.xml" value="0.20863616930312098" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/fragment_splash.xml" value="0.1" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/latest_meal_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/latest_shimmer.xml" value="0.25416666666666665" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/on_boarding_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/on_boarding_iten.xml" value="0.253125" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/popular_item_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/random_item_layout.xml" value="0.3913392141138733" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/layout/search_item_layout.xml" value="0.20778110303548525" />
+        <entry key="..\:/andrpod/NewRecipie/app/src/main/res/menu/bottom_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

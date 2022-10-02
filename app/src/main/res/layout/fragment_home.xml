@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_8sdp">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                style="@style/TextBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/app_name"
+
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_person"
+
+                />
+
+        </LinearLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linear"
+            android:layout_marginHorizontal="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:scrollbarStyle="outsideOverlay"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp">
+
+
+                <TextView
+                    android:id="@+id/tv_welcome_message"
+                    style="@style/TextBold"
+                    android:textSize="@dimen/_18ssp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:letterSpacing=".03"
+                    android:lineSpacingExtra="@dimen/_1sdp"
+                    android:text="@string/welcome_message"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_categories"
+                    style="@style/regularTextBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_welcome_message"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:letterSpacing=".08"
+                    android:lineSpacingExtra="@dimen/_4sdp"
+                    android:text="@string/categories" />
+
+                <TextView
+                    android:id="@+id/tv_categories_view_all"
+                    style="@style/regularText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_welcome_message"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:letterSpacing=".08"
+                    android:lineSpacingExtra="@dimen/_4sdp"
+                    android:text="@string/view_all" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_below="@id/tv_categories"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="horizontal"
+                    android:scrollbarStyle="outsideOverlay"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/category_item_layout"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_random"
+                    style="@style/regularTextBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rv_categories"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:letterSpacing=".08"
+                    android:lineSpacingExtra="@dimen/_4sdp"
+                    android:text="@string/latest" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_random"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_below="@id/tv_random"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintGuide_percent="0.4"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/random_item_layout" />
+
+                <TextView
+                    android:id="@+id/tv_popular"
+                    style="@style/regularTextBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rv_random"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:letterSpacing=".08"
+                    android:lineSpacingExtra="@dimen/_4sdp"
+                    android:text="@string/popular" />
+
+                <TextView
+                    android:id="@+id/tv_popular_view_all"
+                    style="@style/regularText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rv_random"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:letterSpacing=".08"
+                    android:lineSpacingExtra="@dimen/_4sdp"
+                    android:text="@string/view_all" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_popular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_popular"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2"
+                    tools:listitem="@layout/popular_item_layout" />
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

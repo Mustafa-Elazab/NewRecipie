@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.newrecipie.view.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_categoryItemsFragment"
+            app:destination="@id/categoryItemsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mealDetailFragment"
+            app:destination="@id/mealDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.newrecipie.view.fragment.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" >
+        <action
+            android:id="@+id/action_favouriteFragment_to_mealDetailFragment"
+            app:destination="@id/mealDetailFragment" />
+        <action
+            android:id="@+id/action_favouriteFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.newrecipie.view.fragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_mealDetailFragment"
+            app:destination="@id/mealDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryItemsFragment"
+        android:name="com.example.newrecipie.view.fragment.CategoryItemsFragment"
+        android:label="fragment_category_items"
+        tools:layout="@layout/fragment_category_items" >
+        <argument
+            android:name="category_name"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_categoryItemsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_categoryItemsFragment_to_mealDetailFragment"
+            app:destination="@id/mealDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mealDetailFragment"
+        android:name="com.example.newrecipie.view.fragment.MealDetailFragment"
+        android:label="fragment_meal_detail"
+        tools:layout="@layout/fragment_meal_detail" >
+        <action
+            android:id="@+id/action_mealDetailFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="meal_id"
+            app:argType="string" />
+    </fragment>
+</navigation>
